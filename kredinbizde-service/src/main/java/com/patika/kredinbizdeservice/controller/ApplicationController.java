@@ -4,9 +4,11 @@ import com.patika.kredinbizdeservice.dto.request.ApplicationRequest;
 import com.patika.kredinbizdeservice.model.Application;
 import com.patika.kredinbizdeservice.service.ApplicationService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("api/applications")
