@@ -1,0 +1,13 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: onlineshopping-gateway
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: user-service
+            uri: lb://ONLINESHOPPING-SERVICE
+            predicates:
+              - Path=/api/users/**
